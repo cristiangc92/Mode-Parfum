@@ -1,0 +1,102 @@
+.main-footer {
+    display: flex;
+    color: white;
+    background-color: #000000;
+    padding: 0;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.title_column {
+    margin: 8px;
+    color: #403d39;
+}
+
+.history_footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin: 6px;
+    transition: all 400ms ease;
+}
+
+.mission_footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin: 6px;
+    transition: all 400ms ease;
+}
+
+.history_footer:hover, .mission_footer:hover {
+    text-decoration: underline;
+}
+
+.history_footer:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mission_footer:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item_1, .item_2 {
+    display: flex;
+    margin: 6px;
+}
+
+.a_1 {
+    text-decoration: none;
+    color: white;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+}
+
+
+
+.a_2 {
+    text-decoration: none;
+    color: white;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+}
+
+.a_1:hover, .a_2:hover {
+    text-decoration: underline;
+}
+
+.content_column {
+    margin: 6px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 280px;
+  height: 120px;
+  background-color: #191c24;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 20px;
+}
+.container_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  font-size: 5rem;
+}

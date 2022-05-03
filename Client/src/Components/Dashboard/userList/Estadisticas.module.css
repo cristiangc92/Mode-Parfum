@@ -1,0 +1,107 @@
+.container {
+    width: calc(100% - 40px);
+    color: #6c7293;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2px;
+    padding-top: 70px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: aqua; */
+  }
+  
+  .hr {
+    border: 0;
+    border-top: 2px solid #6c7293;
+  }
+  
+  .columnHeader {
+    width: 82%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: fixed;
+    top: 70px;
+    left: 210px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .title {
+    font-style: italic;
+    width: 115px;
+    text-align: center;
+  }
+  
+  .photo_user {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: aliceblue;
+  }
+  
+  .container_select_favoritos select {
+    width: 100px;
+    padding: 5px 0px;
+    background-color: transparent;
+    color: #fff;
+  }
+  .container_select_favoritos select option {
+    width: 100px;
+    background-color: #000;
+  }
+  .container_data_user {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container_admin_buttons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cont_name {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cont_name h4 {
+    margin-left: 5px;
+  }
+  
+  .container_info_button button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: solid 1px red;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+    display: flex;
+  }
+  .green button {
+    color: green;
+    outline: solid 1px green;
+  }
+  .container_info_button:hover button {
+    opacity: 1;
+  }
+  
+  .cont_buttons {
+    display: flex;
+    gap: 5px;
+  }

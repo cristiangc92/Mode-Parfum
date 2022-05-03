@@ -1,0 +1,43 @@
+.fav_container {
+    text-align: center;
+}
+
+.title_fav {
+    width: 100vw;
+    margin-bottom: 25px;
+}
+
+.vacio {
+    width: 100vw;
+    margin-bottom: 9%;
+}
+
+.btn_volver_fav {
+    justify-content: center;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    width: 75px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 400ms ease;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 18%;
+    margin-left: 3.2%;
+}
+
+.btn_volver_fav a {
+    text-align: center;
+    justify-content: center;
+}
+
+.btn_volver_fav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.btn_volver_fav:hover {
+    color: white;
+    background: black;
+}

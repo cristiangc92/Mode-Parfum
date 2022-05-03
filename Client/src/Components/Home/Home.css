@@ -1,0 +1,74 @@
+.pagination_btn { 
+    z-index: 3;
+    position: relative;
+    width: 95.5%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 38px;
+    margin-bottom: 10px;
+}
+.admin-flotante{ 
+    position: fixed;
+    line-height: 10px;
+    bottom: 8rem;
+    right: 39px;
+    background: #88739b;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+    z-index: 100;
+    transition: all 400ms ease;
+} 
+.person_icon_nav{ 
+    font-size: 2rem;
+} 
+
+.admin-flotante:hover{ 
+    text-decoration: none;
+    color: #88739b;
+    background: #ffffff;
+}
+.btn-wsp {
+    position: fixed;
+    line-height: 10px;
+    bottom: 30px;
+    right: 30px;
+    background: #88739b;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+    z-index: 100;
+    transition: all 400ms ease;
+} 
+
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #88739b;
+    background: #ffffff;
+}
+
+.pagination_btn a {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.pagination_btn a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.pagination_active a{
+    color: #ffffff;
+    background-color: #000000;
+}
