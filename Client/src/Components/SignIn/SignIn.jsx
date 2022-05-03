@@ -4,10 +4,9 @@ import logo from "./Logo/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import service from "../../services/login";
 import { useDispatch, useSelector } from "react-redux";
-// import { login, logOut } from "../../redux/actions/actions";
-// import { authSwitch, loginUser, logout } from "../../redux/actions/actions";
-// import swal from "sweetalert";
+import GoogleLogin from "react-google-login";
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 
 export function validate(input) {
   let errors = {};
@@ -30,7 +29,8 @@ function SignUp() {
   const [input, setInput] = useState({
     username: "",
     password: "",
-  });
+  }); 
+
   const [user, setUser] = useState(null);
   const [errors, setErrors] = useState({});
 
@@ -71,30 +71,15 @@ function SignUp() {
       toast.error("Contraseña o usuario incorrecto.");
     }
   };
-
-  //   const mostrarAlerta = () =>{
-  //     swal("¿Seguro que deseas cerrar sesión?", {
-  //         buttons: ["no", true],
-  //       }).then(respuesta=> {
-  //           if(respuesta){
-  //             dispatch(loginUser())
-  //             window.localStorage.removeItem("loggedToken")
-  //             navigate('/')
-  //           }
-  //       })
-  // }
-
-  //   const mostrarAlerta = () =>{
-  //     swal("¿Seguro que deseas cerrar sesión?", {
-  //         buttons: ["no", true],
-  //       }).then(respuesta=> {
-  //           if(respuesta){
-  //             dispatch(loginUser())
-  //             window.localStorage.removeItem("loggedToken")
-  //             navigate('/')
-  //           }
-  //       })
-  // }
+  const respuestaGoogle = (respuesta) => { 
+    console.log(respuesta.profileObj.googleId)
+    axios
+        .post("/register", {
+          username: respuesta.profileObj.email,
+          password: respuesta.profileObj.googleId,
+        })
+    navigate("/")
+  }
 
   return (
     <>
@@ -128,8 +113,15 @@ function SignUp() {
             />
             {errors.password && <p className="error">{errors.password}</p>}
             <button>Acceder</button>
-            <div style={{position: "relative",
-             top: "-1rem"}}>
+            <GoogleLogin
+              clientId="909615731637-in2a5sb985nndpniessv5trc4ph926q7.apps.googleusercontent.com"
+              buttonText="Login"
+              onSuccess={respuestaGoogle}
+              onFailure={() => console.log("fail")}
+              cookiePolicy={"single_host_origin"}
+              style={{color: "black important!"}}
+            />
+            <div style={{ position: "relative", top: "-1rem" }}>
               <Link className="link-to-signup" to={"/PasswordReset"}>
                 ¿Olvidaste tu contraseña?
               </Link>

@@ -1,11 +1,9 @@
 const infoDb = require('../services/infoDB.service')
-
+const { Family } = require("../db");
 const getFamily = async(req,res) => {
-    try{ 
-        const { name } = req.query
-        const allProduct = await infoDb.productsDbInfo() 
-        let filtFamily = allProduct.filter(e=> e.family.dataValues.name.toLowerCase() === name.toLowerCase()) 
-        res.json(filtFamily)
+    try{
+        const allProduct = await Family.findAll()  
+        res.json(allProduct)
     }catch(e){
         console.log(e)
     }

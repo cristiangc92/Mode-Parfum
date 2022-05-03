@@ -24,35 +24,35 @@
     "precio": [[25, 12770]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/169657-1000-1000/angel-edp.jpg?v=637432081652600000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [5]
   },
   {
     "nombre": "Alien Pierre Magique",
     "marca": "Mugler",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": ["floral blanco", "ambar", "amaderado", "almizclado", "atalcado"],
     "precio": [[50, 13000]],
     "img": "https://fraguru.com/mdimg/perfume/375x500.18763.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [10]
   },
   {
     "nombre": "Pleasures EDP",
     "marca": "ESTEE LAUDER",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
-      "Lirios",
-      "Blancos",
-      "Hoja de Violeta",
-      "Lilas Negras",
-      "Peonías Blancas",
-      "Rosas Rosas",
-      "Esencia de Baie Rose",
-      "Jazmín Natural",
+      "lirios",
+      "blancos",
+      "hoja de Violeta",
+      "lilas Negras",
+      "peonías blancas",
+      "rosas",
+      "esencia de Baie Rose",
+      "Jazmin natural",
       "Capullos de Karo-Karounde",
       "sandalo",
       "pachuli"
@@ -60,22 +60,22 @@
     "precio": [[30, 9250]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/157471-1000-1000/pleasures-edp-.jpg?v=637336346387370000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [7]
   },
   {
     "nombre": "BE Delicious EDP",
     "marca": "Donna Karan",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
-      "Lirios",
-      "Blancos",
-      "Hoja de Violeta",
-      "Lilas Negras",
-      "Peonías Blancas",
-      "Rosas Rosas",
-      "Esencia de Baie Rose",
+      "lirios",
+      "blancos",
+      "hoja de Violeta",
+      "lilas Negras",
+      "peonías blancas",
+      "rosas",
+      "esencia de Baie Rose",
       "Jazmín Natural",
       "Capullos de Karo-Karounde",
       "sandalo",
@@ -84,14 +84,14 @@
     "precio": [[30, 10500]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164260-1000-1000/be-delicious-edp-61BAB812BE6DA0494850F307EB82E361.jpg?v=637347498660770000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Dkny Women EDP",
     "marca": "Donna Karan",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "nenúfares",
       "orquídeas",
@@ -101,16 +101,16 @@
     "precio": [[30, 10600]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/178425-1000-1000/dkny-women-edp-36503D674DDC9827B580832249FE3486.jpg?v=637687118544630000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "King of Seduction EDT",
     "marca": "Antonio Banderas",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
-      "Bergamota",
+      "bergamota",
       "manzana",
       "marina",
       "cedro",
@@ -120,21 +120,20 @@
     "precio": [[100, 35640]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/158880-1000-1000/king-of-seduction-edt-015E0E984CD23A6C30CFE91BCABE066D.jpg?v=637339026229630000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [9]
   },
   {
     "nombre": "Blue Seduction For Men EDT",
     "marca": "Antonio Banderas",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
-      "Bergamota",
-      "Grosella negra",
+      "bergamota",
+      "grosella negra",
       "menta",
       "cardamomo",
-      "nuez",
-      "moscada",
+      "nuez moscada",
       "ambar"
     ],
     "precio": [
@@ -143,7 +142,7 @@
     ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/174678-1000-1000/blue-seduction-for-men-edt-0C6A00F1623B9DF585A1750D782D5805.jpg?v=637602339338870000",
     "disponibilidad": true,
-    "stock": [3, 2]
+    "stock": [10, 12]
   },
   {
     "nombre": "The Icon EDT",
@@ -158,14 +157,14 @@
     ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/173633-1000-1000/the-icon-edt-6632F24FE8DA797BE72D3A102E675D64.jpg?v=637576671931930000",
     "disponibilidad": true,
-    "stock": [3, 2]
+    "stock": [0, 1]
   },
   {
     "nombre": "Diavolo EDT",
     "marca": "Antonio Banderas",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "bergamota",
       "mandarina",
@@ -177,14 +176,14 @@
     "precio": [[100, 2121]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164741-1000-1000/diavolo-edt-07456E064F89C646AD4C2E1BBB66C96B.jpg?v=637347502622030000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [30]
   },
   {
     "nombre": "Nina EDT",
     "marca": "Nina Ricci",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "espiral de citricos",
       "lima de caipirinha",
@@ -199,14 +198,14 @@
     ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/178398-1000-1000/nina-edt-E4DF0574512F2C57869E4BD773E5E5DB.jpg?v=637686146875630000",
     "disponibilidad": true,
-    "stock": [3, 2]
+    "stock": [5, 4]
   },
   {
     "nombre": "Nina Extra Rouge EDT",
     "marca": "Nina Ricci",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "espiral de citricos",
       "lima de caipirinha",
@@ -228,7 +227,7 @@
     "marca": "Nina Ricci",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "acordes de clavel",
       "gardenia",
@@ -239,14 +238,14 @@
     "precio": [[100, 9280]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/165651-1000-1000/l-air-du-temps-edt-A13A92DE57629A67CEE8057E82EDD423.jpg?v=637347509947070000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Nina Soleil EDT ED.LIMITADA",
     "marca": "Nina Ricci",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "bergamota",
       "mandarina",
@@ -258,14 +257,14 @@
     "precio": [[50, 8330]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/183060-1000-1000/nina-soleil-edt-C81BA88B0BD7849A81C4FCEE28EEB1B2.jpg?v=637800195197100000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Good Girl EDP ED.LIMITADA",
     "marca": "Carolina Herrera",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "almendra",
       "Ylang-ylang",
@@ -276,14 +275,14 @@
     "precio": [[150, 17976]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/183938-1000-1000/good-girl-edp-4E6C4A7FB9C81FD71485D27A4097CF68.jpg?v=637823630507770000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Good Girl Supreme EDP",
     "marca": "Carolina Herrera",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "almendra",
       "Ylang-ylang",
@@ -304,7 +303,7 @@
     "marca": "Carolina Herrera",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "bergamota",
       "uva",
@@ -315,14 +314,14 @@
     "precio": [[50, 9300]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164490-1000-1000/ch-edt-4BAB42087BCC759C23C4B4D88984613A.jpg?v=637347500587200000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Lady Million Fabulous EDP",
     "marca": "Paco Rabanne",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "bergamota",
       "uva",
@@ -343,7 +342,7 @@
     "marca": "Jean Paul Gaultier",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "pachuli",
       "nota de almendras garrapiñada",
@@ -362,7 +361,7 @@
     "marca": "Jean Paul Gaultier",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "madera de coco asociada con bergamota",
       "caramelo",
@@ -381,7 +380,7 @@
     "marca": "Tommy Hilfiger",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": [
       "manzana",
       "flores de Camelia y las Grosellas",
@@ -391,7 +390,7 @@
     "precio": [[100, 15900]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/155487-1000-1000/tommy-girl-edt-6E96AC8376991DFDA30C4CDA0131D527.jpg?v=637334545741800000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Woman By Ralph Lauren",
@@ -428,7 +427,7 @@
     "marca": "Paco Rabanne",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromatica",
+    "familia": "Olfativa aromática",
     "notas": [
       "Acorde marino",
       "laurel",
@@ -441,10 +440,6 @@
       [50, 13000],
       [100, 15850]
     ],
-    "precio": {
-      "50ml": 13000,
-      "100ml": 15850
-    },
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/172435-1000-1000/invictus-edt-2CD5461290696D7332A2729623B30ABE.jpg?v=637527938766000000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -454,7 +449,7 @@
     "marca": "Paco Rabanne",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromatica",
+    "familia": "Olfativa aromática",
     "notas": [
       "mandarina",
       "menta",
@@ -476,7 +471,7 @@
     "marca": "Calvin Klein",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromatica",
+    "familia": "Olfativa aromática",
     "notas": [
       "cacao",
       "limon",
@@ -487,7 +482,7 @@
     "precio": [[150, 13600]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/172778-1000-1000/ck-in2u-men-edt-0EC02DC03161319D6C103CEDB4BEB597.jpg?v=637541248705800000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Polo red",
@@ -536,7 +531,7 @@
     "marca": "Ralph Lauren",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": [
       "bergamota",
       "cardamomo",
@@ -559,7 +554,7 @@
     "marca": "Ralph Lauren",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": ["mandarina", "melon", "albahaca", "geranio", "ante", "musgo"],
     "precio": [
       [75, 14490],
@@ -574,7 +569,7 @@
     "marca": "Ralph Lauren",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "olfativa aromatica",
+    "familia": "Olfativa aromática",
     "notas": ["lavanda", "salvia", "amaderado"],
     "precio": [
       [50, 14490],
@@ -589,12 +584,12 @@
     "marca": "Dolce & Gabbana",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromatica",
+    "familia": "Olfativa aromática",
     "notas": ["manzana", "jazmines", "bambú", "ámbar", "almizcle"],
     "precio": [[25, 10640]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/173546-1000-1000/light-blue-edt-A8884F2162DFB8025E602FA38B2E9FC4.jpg?v=637572206736570000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "K By Dolce & Gabanna EDP",
@@ -616,7 +611,7 @@
     "marca": "Jean Paul Gaultier",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Oriental Fougère",
+    "familia": "Fougere Oriental",
     "notas": ["menta", "lavanda", "vainilla"],
     "precio": [
       [75, 12500],
@@ -666,19 +661,19 @@
     "precio": [[200, 18900]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/179007-1000-1000/scandal-pour-homme-edt-refill-7814C6025723E2962B1E2D6B905B1D63.jpg?v=637702562854500000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "BAD BOY EDT",
     "marca": "Carolina Herrera",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Oriental Aromática",
+    "familia": "Olfativa aromática",
     "notas": ["salvia", "bergamota Verde", "pimienta", "cacao", "madera ambar"],
     "precio": [[150, 21470]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/183067-1000-1000/bad-boy-edt-BEB3ABC93246F4D4607402FEBF7F4973.jpg?v=637800302716030000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "COOL WATER MAN PARFUM",
@@ -720,7 +715,7 @@
     "precio": [[100, 18300]],
     "img": "https://media.glamour.es/photos/616fad4c8b65741b659dbe39/master/w_1280%2Cc_limit/454998.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Le Parfum Rose Couture",
@@ -732,7 +727,7 @@
     "precio": [[30, 15000]],
     "img": "https://media.glamour.es/photos/616fad4d0ff0e632eaeb53cf/master/w_1280%2Cc_limit/455001.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Rose Godea",
@@ -744,7 +739,7 @@
     "precio": [[50, 17500]],
     "img": "https://media.glamour.es/photos/616fad4d5da3f805e8f75ee1/master/w_1280%2Cc_limit/455004.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Rose des vents",
@@ -756,7 +751,7 @@
     "precio": [[100, 30400]],
     "img": "https://media.glamour.es/photos/616fad4b303e546fa7902ebe/master/w_1280%2Cc_limit/454980.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Wonderlust",
@@ -768,7 +763,7 @@
     "precio": [[30, 16900]],
     "img": "https://media.glamour.es/photos/616fad4dbe7fea11c55d7d37/master/w_1280%2Cc_limit/455005.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Happy Moments",
@@ -780,7 +775,7 @@
     "precio": [[150, 20000]],
     "img": "https://media.glamour.es/photos/616fad4bbcde302b0cd83b3d/master/w_1280%2Cc_limit/454982.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "L.12.12 Sparkling",
@@ -792,7 +787,7 @@
     "precio": [[100, 14900]],
     "img": "https://media.glamour.es/photos/616fad4d5da3f805e8f75ee3/master/w_1280%2Cc_limit/455006.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "CK One Gold",
@@ -814,7 +809,7 @@
     "precio": [[100, 16950]],
     "img": "https://media.glamour.es/photos/616fad4b2a1ee7f446e3a000/master/w_1280%2Cc_limit/454984.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Guilty",
@@ -826,7 +821,7 @@
     "precio": [[100, 25000]],
     "img": "https://media.glamour.es/photos/616fad4b11b2c5d61120a250/master/w_1280%2Cc_limit/454985.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Signorina in rosso",
@@ -838,7 +833,7 @@
     "precio": [[50, 15600]],
     "img": "https://media.glamour.es/photos/616fad4c1c489cc5b47fdc8f/master/w_1280%2Cc_limit/454986.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Decadende 18K",
@@ -856,7 +851,7 @@
     "precio": [[100, 20000]],
     "img": "https://media.glamour.es/photos/616fad4c5aadbca7aab7e509/master/w_1280%2Cc_limit/454987.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Flower",
@@ -868,7 +863,7 @@
     "precio": [[100, 14570]],
     "img": "https://media.glamour.es/photos/616fad4c8acf211ccf4fc650/master/w_1280%2Cc_limit/454988.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Narciso Poudrée",
@@ -880,7 +875,7 @@
     "precio": [[50, 20500]],
     "img": "https://media.glamour.es/photos/616fad4cc16487e5fd1be7c3/master/w_1280%2Cc_limit/454989.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Ever Bloom",
@@ -892,7 +887,7 @@
     "precio": [[30, 15000]],
     "img": "https://media.glamour.es/photos/616fad4c7dc5777c054d62f8/master/w_1280%2Cc_limit/454990.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Modern Muse Le rouge",
@@ -904,7 +899,7 @@
     "precio": [[100, 14000]],
     "img": "https://media.glamour.es/photos/616fad4c2a1ee7f446e3a002/master/w_1280%2Cc_limit/454991.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Be Delicious Crystallized",
@@ -916,7 +911,7 @@
     "precio": [[100, 13000]],
     "img": "https://media.glamour.es/photos/616fad4c60f20fed760a5673/master/w_1280%2Cc_limit/454997.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "La vie est belle",
@@ -933,7 +928,7 @@
     "precio": [[30, 14600]],
     "img": "https://media.glamour.es/photos/616fad4c38abdad04f4562dc/master/w_1280%2Cc_limit/454993.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "L' Eau de Rochas",
@@ -945,23 +940,23 @@
     "precio": [[50, 20500]],
     "img": "https://media.glamour.es/photos/616fad4c16c8b9c6f631b081/master/w_1280%2Cc_limit/454994.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Black Opium",
     "marca": "Yves Saint Laurent",
     "género": "femenino",
     "tipo": "fragancia",
-    "familia": "olfativa aromática",
+    "familia": "Olfativa aromática",
     "notas": ["café", "flores"],
     "precio": [[30, 20490]],
     "img": "https://media.glamour.es/photos/616fad4cbcde302b0cd83b46/master/w_1280%2Cc_limit/454995.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Candy Kiss",
-    "marca": " Prada",
+    "marca": "Prada",
     "género": "femenino",
     "tipo": "fragancia",
     "familia": "olfativa dulce",
@@ -969,7 +964,7 @@
     "precio": [[30, 15700]],
     "img": "https://media.glamour.es/photos/616fad4c15e793e9437c7b42/master/w_1280%2Cc_limit/454996.jpg",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "212 HEROES EDT",
@@ -977,11 +972,11 @@
     "género": "masculino",
     "tipo": "fragancia",
     "familia": "Olfativa aromática",
-    "notas": ["coriácea y amaderada", "aceite de geranio de Madagascar"],
-    "precio": {
-      "50ml": 12400,
-      "90ml": 16800
-    },
+    "notas": ["coriacea", "amaderada", "aceite de geranio de madagascar"],
+    "precio": [
+      [50, 12400],
+      [90, 16800]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/172165-1000-1000/212-heroes-edt-5A5C4771C90EE02AF2703E28E9923D26.jpg?v=637517514583300000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -993,19 +988,19 @@
     "tipo": "fragancia",
     "familia": "Olfativa aromática",
     "notas": [
-      "Mandarina",
-      "Bergamota",
-      "Cardamomo",
-      "Pimienta negra",
-      "Madera de Sándalo",
-      "Madera de Guayacán",
-      "Almizcle Vainilla",
-      "Ámbar"
+      "mandarina",
+      "bergamota",
+      "cardamomo",
+      "pimienta negra",
+      "madera de sandalo",
+      "madera de guayacán",
+      "almizcle vainilla",
+      "ambar"
     ],
-    "precio": {
-      "50ml": 13700,
-      "100ml": 16900
-    },
+    "precio": [
+      [50, 13700],
+      [100, 16900]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164035-1000-1000/212-sexy-men-edt-44E73DE604BC1F6850AB24D5CBF3EC43.jpg?v=637347496605770000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1020,7 +1015,7 @@
     "precio": [[50, 22650]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/158927-1000-1000/the-secret-edt-A847F0DDC4BF9808BCC068ECF34AD93A.jpg?v=637339026718700000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "LOVE ROCK BY SHAKIRA EDT",
@@ -1028,11 +1023,11 @@
     "género": "femenino",
     "tipo": "fragancia",
     "familia": "Olfativa aromática",
-    "notas": ["Jazmin Sambac", "Rosa", "Almizcle", "Vainilla", "Sándalo"],
-    "precio": {
-      "80ml": 21230,
-      "120ml": 28900
-    },
+    "notas": ["jazmin sambac", "rosas", "almizcle", "vainilla", "sandalo"],
+    "precio": [
+      [80, 21230],
+      [120, 28900]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/165924-1000-1000/love-rock-by-shakira-edt-18BBFC6A1DC4271F842792FBB2F98F2E.jpg?v=637347512171800000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1044,21 +1039,21 @@
     "tipo": "fragancia",
     "familia": "Olfativa aromática",
     "notas": [
-      "Bergamota",
-      "Pomelo",
-      "Mandarina",
-      "Flor de Naranjo",
-      "Peonía",
-      "Lirio",
-      "Vainilla",
-      "Almizcle",
-      "Acordes de Caramelo",
-      "Madera"
+      "bergamota",
+      "pomelo",
+      "mandarina",
+      "flor de naranjo",
+      "peonía",
+      "lirios",
+      "vainilla",
+      "almizcle",
+      "acordes de caramelo",
+      "madera"
     ],
-    "precio": {
-      "80ml": 24060,
-      "120ml": 31040
-    },
+    "precio": [
+      [80, 24060],
+      [120, 31040]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164697-1000-1000/dance-by-shakira-edp-ADC52E48D9253AE5637FFF366F624904.jpg?v=637347502249900000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1070,19 +1065,19 @@
     "tipo": "fragancia",
     "familia": "Olfativa aromática",
     "notas": [
-      "Bergamota",
-      "Pera",
-      "Grosella Negra",
-      "Pimienta Rosa",
-      "Tuberosa",
-      "Muguet",
-      "Regaliz",
-      "Cacao"
+      "bergamota",
+      "pera",
+      "grosella negra",
+      "pimienta rosa",
+      "tuberosa",
+      "muguet",
+      "regaliz",
+      "cacao"
     ],
-    "precio": {
-      "80ml": 22640,
-      "120ml": 27800
-    },
+    "precio": [
+      [80, 22640],
+      [120, 27800]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/170104-1000-1000/dance-midnight-edt-D62231903E80F254A33F1B80D58F8AFE.jpg?v=637455394194270000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1108,7 +1103,7 @@
     "precio": [[80, 25040]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/173791-1000-1000/shakira-dance-pop-edt-F3774C65EDE108953906408139DDBA02.jpg?v=637581495739630000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "CK ONE EDT",
@@ -1120,7 +1115,7 @@
     "precio": [[200, 15300]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164527-1000-1000/ck-one-edt-A4B38CAB337C3072CE5A08E067D91419.jpg?v=637347500875700000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Fucking Fabulous",
@@ -1128,11 +1123,11 @@
     "género": "unisex",
     "tipo": "fragancia",
     "familia": "Calido y Picante",
-    "notas": ["Cuero", "Haba Tonka", "Salvia"],
-    "precio": {
-      "50ml": 52500,
-      "100ml": 80500
-    },
+    "notas": ["cuero", "haba tonka", "salvia"],
+    "precio": [
+      [50, 52500],
+      [100, 80500]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/172330-1000-1000/fucking-fabulous-edp-7A882C3F248EDEBCDE2BC192720E69D4.jpg?v=637521374895530000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1147,7 +1142,7 @@
     "precio": [[100, 11550]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/170106-1000-1000/ck-everyone-edt-0D0AE40DA36E303235F5936428F69983.jpg?v=637455394208670000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Chrome EDT",
@@ -1155,11 +1150,11 @@
     "género": "masculino",
     "tipo": "fragancia",
     "familia": "Olfativa Citrica Aromatica",
-    "notas": ["Limon", "Romero", "Bergamota", "Neroli"],
-    "precio": {
-      "50ml": 9850,
-      "100ml": 12970
-    },
+    "notas": ["limon", "romero", "bergamota", "neroli"],
+    "precio": [
+      [50, 9850],
+      [100, 12970]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/170148-1000-1000/chrome-edt-100-ml-AE411D53911FDF346897D6324DBC77B8.jpg?v=637455394572270000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1171,10 +1166,10 @@
     "tipo": "fragancia",
     "familia": "Oriental",
     "notas": ["limon", "flor de olivo", "madera de gaiac", "taba tonka"],
-    "precio": {
-      "50ml": 13990,
-      "75ml": 15490
-    },
+    "precio": [
+      [50, 13990],
+      [75, 15490]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/156209-1000-1000/armani-code-edt.jpg?v=637336332991900000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1184,12 +1179,12 @@
     "marca": "Hugo Boss",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Olfativa Aromatica",
+    "familia": "Olfativa aromática",
     "notas": ["madera de cedros", "café", "limon de calabria"],
-    "precio": {
-      "50ml": 13200,
-      "100ml": 17600
-    },
+    "precio": [
+      [50, 13200],
+      [100, 17600]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/170693-1000-1000/boss-bottled-edp-FB137D2FF269CD38EBB050CF43F70240.jpg?v=637455398973330000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1204,19 +1199,19 @@
     "precio": [[100, 11250]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/172603-1000-1000/bad-edt-1E01AEEA190FCDAB2997215D94E02822.jpg?v=637538455149970000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Spirit of the Brave",
     "marca": "Diesel",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Olfativa Oriental",
+    "familia": "olfativa Oriental",
     "notas": ["amaderada", "abeto", "cipres", "haba tonka", "ládano"],
-    "precio": {
-      "35ml": 3990,
-      "75ml": 10490
-    },
+    "precio": [
+      [35, 3990],
+      [75, 10490]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/170139-1000-1000/spirit-of-the-brave-edt-BA3545CDD9E0FCAB3D1AD1C98AAB439D.jpg?v=637455394499130000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1226,12 +1221,12 @@
     "marca": "Diesel",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": ["anís estrellado", "lavanda", "heliótropo"],
     "precio": [[125, 7990]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/183800-1000-1000/fuel-for-life-edt-8267A4E99623D384543F5773E17A6210.jpg?v=637819202730200000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Sound of the Brave",
@@ -1242,14 +1237,14 @@
     "notas": [
       "esencia de enebro",
       "esencia de limón",
-      "acorde de vainilla",
-      "almizcles",
+      "vainilla",
+      "almizcle",
       "esencia de lavanda"
     ],
-    "precio": {
-      "75ml": 10490,
-      "125ml": 12590
-    },
+    "precio": [
+      [75, 10490],
+      [125, 12590]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/180868-1000-1000/sound-of-the-brave-edt-9FDC5596358D9E035702A500E4481289.jpg?v=637744143438700000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1259,12 +1254,12 @@
     "marca": "Tom Ford",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": ["lavanda", "romero", "geranio verde", "albahaca", "ambar"],
-    "precio": {
-      "50ml": 36900,
-      "100ml": 45900
-    },
+    "precio": [
+      [50, 36900],
+      [100, 45900]
+    ],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/164268-1000-1000/beau-de-jour-edp-13763E38DCFA676EED2B8F8A53697FF0.jpg?v=637347498717570000",
     "disponibilidad": true,
     "stock": [3, 2]
@@ -1274,23 +1269,22 @@
     "marca": "Tom Ford",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": ["ambar", "amaderada oriental"],
     "precio": [[100, 41300]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/158059-1000-1000/tom-ford-noir-extreme-edp-58BFCD323719F16E517BAD0FB95C2C4F.jpg?v=637336352078670000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   },
   {
     "nombre": "Tom Ford Noir",
     "marca": "Tom Ford",
     "género": "masculino",
     "tipo": "fragancia",
-    "familia": "Fougère",
+    "familia": "Fougere Oriental",
     "notas": [
       "pimienta negra",
-      "verbena",
-      "rosa",
+      "rosas",
       "violeta",
       "ambar",
       "cuero",
@@ -1300,6 +1294,6 @@
     "precio": [[100, 41300]],
     "img": "https://juleriaque.vteximg.com.br/arquivos/ids/158057-1000-1000/tom-ford-noir-edp-053A47158E8BF0910D76B7982EFBF8A9.jpg?v=637336352058800000",
     "disponibilidad": true,
-    "stock": 3
+    "stock": [3]
   }
 ]

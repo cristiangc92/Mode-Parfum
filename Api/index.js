@@ -35,20 +35,24 @@ conn.sync({ force: true }).then(() => {
       : (url = "http://localhost:3001");
 
     //USUARIO ADMIN   
-
+ 
     bcrypt.hash(process.env.PASSWORD , saltRounds, async (err, hash) => {
       if (err) {
         console.log(err);
-      }
-      await Users.findOrCreate({
-        where: { 
-          id: 100,
-          username: process.env.USER_ADMIN,
-          password: hash,
-          favourites: [], 
-          isAdmin: true
-        },
-      });
+      } 
+        await Users.findOrCreate({
+          where: { 
+            id: 100,
+            username: process.env.USER_ADMIN,
+            password: hash,
+            favourites: [], 
+            isAdmin: true, 
+            payment: 0,
+          },
+
+        });
     }); 
+
+    //USUARIOS COMPRADOS
   });
 });

@@ -22,6 +22,9 @@ module.exports = (sequelize) => {
       },
       isAdmin : { 
         type: DataTypes.BOOLEAN
+      }, 
+      payment: { 
+        type: DataTypes.INTEGER
       }
     },
     {
