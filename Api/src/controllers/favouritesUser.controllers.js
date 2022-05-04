@@ -1,5 +1,5 @@
 const { Users } = require("../db");
-const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken"); 
 const favouritesUser = async(req, res) => { 
     try {
         const { idProduct } = req.body;

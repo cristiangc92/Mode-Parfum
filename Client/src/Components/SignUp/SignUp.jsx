@@ -59,7 +59,7 @@ function SignUp() {
           password: input.password,
         })
         .then((response) => {
-            toast.success(response.data)
+            toast.success(response.data.success)
             navigate("/SignIn");
         }).catch(() => { 
           return toast.error("Este usuario ya ha sido creado.")
