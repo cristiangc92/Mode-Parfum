@@ -82,7 +82,7 @@ function NavBar() {
               />
               {dropDown && (
                 <DropDown>
-                  <span style={{ color: "white" }}>{token2.username}</span>
+                  <span style={{ color: "white" }}>{token2.username? token2.username : token2.data.username}</span>
                   {token2.isAdmin && (<Button_DropDown onClick={() => navigate("/admin/dashboard")}>Panel admin</Button_DropDown>)}
                   <Button_DropDown onClick={mostrarAlerta}>
                     Cerrar sesión

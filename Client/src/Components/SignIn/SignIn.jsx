@@ -29,7 +29,7 @@ function SignUp() {
   const [input, setInput] = useState({
     username: "",
     password: "",
-  }); 
+  });
 
   const [user, setUser] = useState(null);
   const [errors, setErrors] = useState({});
@@ -71,15 +71,43 @@ function SignUp() {
       toast.error("Contraseña o usuario incorrecto.");
     }
   };
-  const respuestaGoogle = (respuesta) => { 
-    console.log(respuesta.profileObj.googleId)
-    axios
-        .post("/register", {
-          username: respuesta.profileObj.email,
-          password: respuesta.profileObj.googleId,
-        })
-    navigate("/")
-  }
+  const respuestaGoogle = async (respuesta) => {
+    const register = await axios.post("/oneUser", {
+      username: respuesta.profileObj.email,
+      password: respuesta.profileObj.googleId,
+    });
+    if (register.data.hasOwnProperty("success")) {
+      const user = await axios.post("/login", {
+        username: respuesta.profileObj.email,
+        password: respuesta.profileObj.googleId,
+      });
+      window.localStorage.setItem("loggedToken", JSON.stringify(user));
+      service.setToken(user.token);
+      if (user.data.token) {
+        toast.success(`Bienvenido al Home ${user.data.username}`);
+        navigate("/");
+      }
+    } else {
+      const userRegister = await axios.post("/register", {
+        username: respuesta.profileObj.email,
+        password: respuesta.profileObj.googleId,
+      });
+      if (userRegister.data.hasOwnProperty("success")) {
+         setTimeout(async() => {
+           const user = await axios.post("/login", {
+             username: respuesta.profileObj.email,
+             password: respuesta.profileObj.googleId,
+           });
+           window.localStorage.setItem("loggedToken", JSON.stringify(user));
+           service.setToken(user.token);
+           if (user.data.token) {
+             toast.success(`Bienvenido al Home ${user.data.username}`);
+             navigate("/");
+           }
+         }, 1000);
+      }
+    }
+  };
 
   return (
     <>
@@ -113,13 +141,14 @@ function SignUp() {
             />
             {errors.password && <p className="error">{errors.password}</p>}
             <button>Acceder</button>
+            <hr className="linea"/>
             <GoogleLogin
               clientId="909615731637-in2a5sb985nndpniessv5trc4ph926q7.apps.googleusercontent.com"
-              buttonText="Login"
+              buttonText="Acceder con Google"
               onSuccess={respuestaGoogle}
               onFailure={() => console.log("fail")}
               cookiePolicy={"single_host_origin"}
-              style={{color: "black important!"}}
+              style={{ color: "black important!" }}
             />
             <div style={{ position: "relative", top: "-1rem" }}>
               <Link className="link-to-signup" to={"/PasswordReset"}>
@@ -256,7 +285,10 @@ const SignUpContainer = styled.div`
     }
   }
   span {
-    color: #fff;
+    color: black;
+  }
+  .linea{ 
+    width: 15rem;
   }
   h1 {
     color: #fff;

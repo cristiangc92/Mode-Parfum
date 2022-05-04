@@ -3,8 +3,10 @@ const bcrypt = require("bcrypt")
 const { Users } = require("../db");
 const loginUser = async(req , res) => { 
     try { 
-        const { username, password } = req.body;
-        const user = await Users.findOne({ where: { username } });
+        const { username, password } = req.body; 
+        console.log(req.body)
+        const user = await Users.findOne({ where: { username: username } });
+        console.log(user)
     
         if (!user) {
           return res.status(401).json({ error: "invalid user or password" });

@@ -45,10 +45,10 @@ const registerUser = async(req, res) => {
                 favourites: [],
                 isAdmin: false,
                 payment: 0
-              },
+              }, 
             });
           });
-          res.send("Usuario creado correctamente");
+          res.json({ success:"Usuario creado correctamente"});
           registerMail(username);
         } else {
           res
