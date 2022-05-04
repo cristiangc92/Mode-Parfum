@@ -24,7 +24,7 @@ const addProduct = require("./addProduct.routes");
 const userExist = require("./userExist.routes");
 const userToAdmin = require("./userToAdmin.routes")
 const deleteUser = require("./deleteUser.routes")
-
+ 
 const router = Router();
 //especificamos que ruta va a acceder la informacion de getProducts
 router.use("/products", getProducts);
