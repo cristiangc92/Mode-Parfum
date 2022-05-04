@@ -1,4 +1,4 @@
-const { Users, Payments } = require("../db"); 
+const { Users, Payments, Products } = require("../db"); 
 //NODEMAILER
 var NODEMAILER = require("nodemailer");
 
@@ -28,6 +28,7 @@ var confirmMail = async (username) => {
 const successPayment = async(req,res) => {
     try{ 
         const id1 = req.query.payment_id;
+        console.log(id1)
         const infoApi = await axios.get(
           "https://api.mercadopago.com/v1/payments/" + id1,
           {
