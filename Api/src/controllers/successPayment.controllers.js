@@ -1,6 +1,8 @@
 const { Users, Payments, Products } = require("../db"); 
 //NODEMAILER
 var NODEMAILER = require("nodemailer");
+const { default: axios } = require("axios");
+const jwt = require("jsonwebtoken")
 
 var confirmMail = async (username) => {
   var transporter = NODEMAILER.createTransport({
@@ -28,7 +30,6 @@ var confirmMail = async (username) => {
 const successPayment = async(req,res) => {
     try{ 
         const id1 = req.query.payment_id;
-        console.log(id1)
         const infoApi = await axios.get(
           "https://api.mercadopago.com/v1/payments/" + id1,
           {

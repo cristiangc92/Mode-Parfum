@@ -55,6 +55,8 @@ export function getSuccess(payload) {
   return async function (dispatch) {
     let token2 = JSON.parse(window.localStorage.getItem("loggedToken"));
     try {
+      console.log(token2.token)
+      console.log(payload)
       const json = await axios.get("/success?payment_id=" + payload, {
         headers: {
           Authorization: `Bearer ${token2.token}`,

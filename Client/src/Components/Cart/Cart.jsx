@@ -166,7 +166,7 @@ function Cart() {
         ))}
         <div className="total">
           <form
-            action="https://back-mode-parfum.herokuapp.com/checkout"
+            action="https://mode-parfum.vercel.app/checkout"
             method="POST"
             className="form_mp"
           >
