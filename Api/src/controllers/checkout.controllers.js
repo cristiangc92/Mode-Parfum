@@ -25,7 +25,7 @@ const checkout = async(req, res) => {
             cost: 1000,
             mode: "not_specified",
           },
-           
+            
         };
         //console.log('esto es success',preference.back_urls.success)
         if (Array.isArray(body.title)) {
