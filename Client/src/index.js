@@ -6,8 +6,8 @@ import axios from "axios";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
 
-axios.defaults.baseURL = "https://back-mode-parfum.herokuapp.com"
-
+axios.defaults.baseURL = "http://localhost:3001"
+//https://back-mode-parfum.herokuapp.com
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

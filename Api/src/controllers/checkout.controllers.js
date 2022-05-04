@@ -11,9 +11,9 @@ const checkout = async(req, res) => {
         let preference = {
           items: [],
           back_urls: {
-            success: "https://client-rho-plum.vercel.app/success",
-            failure: "https://client-rho-plum.vercel.app/",
-            pending: "https://client-rho-plum.vercel.app/",
+            success: "https://mode-parfum.vercel.app/success",
+            failure: "https://mode-parfum.vercel.app/",
+            pending: "https://mode-parfum.vercel.app/",
           },
       
           //notification_url: "https://6a49-181-199-153-221.ngrok.io/success",

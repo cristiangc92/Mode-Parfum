@@ -104,7 +104,7 @@ function SignUp() {
              toast.success(`Bienvenido al Home ${user.data.username}`);
              navigate("/");
            }
-         }, 1000);
+         }, 3000);
       }
     }
   };
