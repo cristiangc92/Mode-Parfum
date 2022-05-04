@@ -12,7 +12,6 @@ function UserList() {
   const products = useSelector((state) => state.products);
   const allUsers = useSelector((state) => state.allUsers);
   const [handleUser, setHandleUser] = useState(0)
-  const [handleUser2, setHandleUser2] = useState(0)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -44,14 +43,14 @@ function UserList() {
          }else{
           toast.success("Le quitó permisos de Admin a este usuario!")
            dispatch(userToAdmin({id , admin: true}))
-           setHandleUser2( handleUser2 + 1)
+           setHandleUser(handleUser + 1)
          }
         }
     })
   } 
   useEffect(() => {
     dispatch(getUsers())
-  }, [dispatch , handleUser, handleUser2])
+  }, [dispatch , handleUser])
   console.log(allUsers)
 
   return (
