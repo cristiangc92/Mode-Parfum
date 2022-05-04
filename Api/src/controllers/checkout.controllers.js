@@ -3,7 +3,7 @@ const mercadopago = require("mercadopago");
 mercadopago.configure({
     access_token:
       "APP_USR-5816583834132762-040916-8d2fb925bd3a46afdff9171639461127-1103818355",
-  }); 
+  });  
 // SDK de Mercado Pago para Node.js 
 const checkout = async(req, res) => { 
     try{ 
