@@ -50,7 +50,7 @@ function UserList() {
   } 
   useEffect(() => {
     dispatch(getUsers())
-  }, [dispatch , allUsers , handleUser])
+  }, [dispatch , allUsers])
   console.log(allUsers)
 
   return (
