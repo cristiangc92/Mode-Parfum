@@ -111,7 +111,7 @@ function Dashboard() {
             style={{ marginRight: "3px" }}
           ></FaUserCircle>
           <div>
-            <h4 className={styles.name_user}>{token.username}</h4>
+            <h4 className={styles.name_user}>{token?token.username:"Admin"}</h4>
           </div>
           <MdKeyboardArrowDown
             className={styles.arrow_button}
@@ -144,7 +144,7 @@ function Dashboard() {
           <div className={styles.user_aside}>
             <FaUserCircle className={styles.photo_user}></FaUserCircle>
             <div>
-              <h4 className={styles.name_user}>{token.username}</h4>
+              <h4 className={styles.name_user}>{token?token.username:"Admin"}</h4>
               <h6 className={styles.name_rol}>Admin</h6>
             </div>
             <div className={styles.circle_online}></div>
@@ -195,7 +195,7 @@ function Dashboard() {
                 <button
                   onClick={() => handleMenu("allProducts", true)}
                   className={styles.button_options_menu_aside}
-                  style={{ color: "#fff" }}
+                  style={{ fontSize:"1.2rem" }}
                 >
                   Ver todos
                 </button>
@@ -210,7 +210,7 @@ function Dashboard() {
               {menu.createProduct ? (
                 <button
                   onClick={() => handleMenu("createProduct", true)}
-                  style={{ color: "#fff" }}
+                  style={{ fontSize:"1.2rem" }}
                   className={styles.button_options_menu_aside}
                 >
                   Agregar
@@ -226,7 +226,7 @@ function Dashboard() {
               {menu.estadisticas ? (
                 <button
                   onClick={() => handleMenu("estadisticas", true)}
-                  style={{ color: "#fff" }}
+                  style={{ fontSize:"1.2rem" }}
                   className={styles.button_options_menu_aside}
                 >
                   Estadisticas
@@ -273,7 +273,7 @@ function Dashboard() {
                 <button
                   onClick={() => handleMenu("allUsers", true)}
                   className={styles.button_options_menu_aside}
-                  style={{ color: "#fff" }}
+                  style={{ fontSize:"1.2rem" }}
                 >
                   Registrados
                 </button>

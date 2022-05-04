@@ -6,6 +6,7 @@
   padding: 20px;
   gap: 2px;
   padding-top: 70px;
+  position: relative;
 }
 
 .card {
@@ -23,23 +24,20 @@
 }
 
 .columnHeader {
-  width: 82%;
+  width: calc(100% + 40px);
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.479);
-  position: fixed;
-  top: 70px;
-  left: 210px;
+  background-color: #ffffff7a;
+  position: absolute;
+  top: -20px;
+  left: -20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  z-index: 4;
 }
 
 .title {
   font-style: italic;
-  width: 115px;
   text-align: center;
+  margin-left: 35px;
 }
 
 .title_number {

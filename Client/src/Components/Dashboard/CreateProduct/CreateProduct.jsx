@@ -19,6 +19,7 @@ import {
   ColumnHeader,
   Title,
   Label,
+  SelectAtribute
 } from "./styleCreateProduct.jsx";
 import imgDefault from "../img/img_default.png";
 import { useDispatch, useSelector } from "react-redux";
@@ -57,7 +58,7 @@ function UpdatePerfum() {
     dispatch(getNotes());
     dispatch(getAllBrand());
     setNotas(notes);
-  }, [notes, dispatch]);
+  }, [notes]);
   function handleCant_Botellas(e) {
     let aux = [];
     for (let i = 0; i < e.target.value; i++) {
@@ -223,6 +224,9 @@ function UpdatePerfum() {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Container_Edit>
+      <ColumnHeader>
+            <Title>Crear Perfume</Title>
+        </ColumnHeader>
         <Galeria>
           <ContainerImg>
             <Img src={data.img ? data.img : imgDefault} className="img"></Img>
@@ -267,14 +271,13 @@ function UpdatePerfum() {
               >
                 Géneros:
               </TituloCheckbox>
-              <select
+              <SelectAtribute 
                 onChange={handleCheckGenres}
-                style={{ backgroundColor: "black", color: "white" }}
               >
                 {genres?.map((genre) => {
                   return <option value={genre}>{genre}</option>;
                 })}
-              </select>
+              </SelectAtribute>
               {/* <Checkbox>
                     <label style={{ minWidth: "max-content" }} forhtml={genre}>
                       {genre}
@@ -301,14 +304,13 @@ function UpdatePerfum() {
               >
                 Tipos:
               </TituloCheckbox>
-              <select
+              <SelectAtribute
                 onChange={handleCheckTypes}
-                style={{ backgroundColor: "black", color: "white" }}
               >
                 {types?.map((type) => {
                   return <option value={type}>{type}</option>;
                 })}
-              </select>
+              </SelectAtribute>
               {/* // <Checkbox>
                 //   <label style={{ minWidth: "max-content" }} forhtml={type}>
                 //     {type}
@@ -335,9 +337,8 @@ function UpdatePerfum() {
               >
                 Familia:
               </TituloCheckbox>
-              <select
+              <SelectAtribute
                 onChange={handleCheckFamilys}
-                style={{ backgroundColor: "black", color: "white" }}
               >
                 {familys?.map((family, i) => {
                   return (
@@ -346,7 +347,7 @@ function UpdatePerfum() {
                     </option>
                   );
                 })}
-              </select>
+              </SelectAtribute>
               {/* // <Checkbox>
                 //   <label style={{ minWidth: "max-content" }} forhtml={family.name}>
                 //     {family.name}
@@ -373,9 +374,8 @@ function UpdatePerfum() {
               >
                 Marcas:
               </TituloCheckbox>
-              <select
+              <SelectAtribute
                 onChange={handleCheckBrands}
-                style={{ backgroundColor: "black", color: "white" }}
               >
                 {brands?.map((brand, i) => {
                   return (
@@ -384,7 +384,7 @@ function UpdatePerfum() {
                     </option>
                   );
                 })}
-              </select>
+              </SelectAtribute>
               {/* // <Checkbox>
                 //   <label style={{ minWidth: "max-content" }} forhtml={brand.name}>
                 //     {brand.name}
@@ -470,7 +470,7 @@ function UpdatePerfum() {
                 );
               })}
             </ContainerCheckbox>
-            <ContainerCheckbox>
+            <ContainerCheckbox style={{height: "200px"}}>
               <TituloCheckbox
                 style={{
                   display: "flex",

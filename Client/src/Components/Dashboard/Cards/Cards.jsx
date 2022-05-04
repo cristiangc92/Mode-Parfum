@@ -26,9 +26,9 @@ function Cards() {
   },[dispatch])
   
   const cards = [
-    { title: "Usuarios Registrados", data: usuarios.length, color: "#6bdb0f", icon: <FaUsers /> },
-    { title: "Pruductos Vendidos", data: suma, color: "#5368dd", icon: <RiInkBottleLine /> },
-    { title: "Total Ventas", data: result, color: "#0ea59d", icon: <BsCashCoin /> },
+    { title: "Usuarios Registrados", data: usuarios.length, color: "#6c7293", icon: <FaUsers /> },
+    { title: "Pruductos Vendidos", data: suma, color: "#6c7293", icon: <RiInkBottleLine /> },
+    { title: "Total Ventas", data: result, color: "#6c7293", icon: <BsCashCoin /> },
   ];
 
   return (

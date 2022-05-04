@@ -6,6 +6,7 @@
   padding: 20px;
   gap: 2px;
   padding-top: 70px;
+  position: relative;
 }
 
 .card {
@@ -23,36 +24,35 @@
 }
 
 .columnHeader {
-  width: 82%;
+  width: calc(100% + 40px);
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.479);
-  position: fixed;
-  top: 70px;
-  left: 210px;
+  background-color: #ffffff7a;
+  position: absolute;
+  top: -20px;
+  left: -20px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 10px;
 }
 
 .title {
   font-style: italic;
-  width: 115px;
   text-align: center;
+  margin-left: 35px;
 }
 
 .photo_user {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  color: aliceblue;
+  color: #6c7293;
 }
 
 .container_select_favoritos select {
   width: 100px;
   padding: 5px 0px;
   background-color: transparent;
-  color: #fff;
+  color: #6c7293;
 }
 .container_select_favoritos select option {
   width: 100px;
@@ -86,16 +86,16 @@
   padding: 10px;
   background-color: transparent;
   border: none;
-  outline: solid 1px red;
-  color: red;
+  outline: solid 1px #333;
+  color: #333;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0.9;
   display: flex;
 }
 .green button {
-  color: green;
-  outline: solid 1px green;
+  color: #6c7293;
+  outline: solid 1px #6c7293;
 }
 .container_info_button:hover button {
   opacity: 1;

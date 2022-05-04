@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container_Edit = styled.form`
   width: 100%;
-  height: 90vh;
+  height: max-content;
   position: relative;
   color: aliceblue;
   display: flex;
   align-items: center;
   flex-direction: row;
   font-family: "Red Hat Text", sans-serif;
+  padding-top: 50px;
   @media (max-width: 700px) {
     width: 100vw;
     height: max-content;
@@ -17,17 +18,15 @@ export const Container_Edit = styled.form`
   }
 `;
 export const ColumnHeader = styled.div`
-  width: 82%;
+ width: calc(100% + 40px);
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.479);
-  position: fixed;
-  top: 70px;
-  left: 216px;
+  background-color: #ffffff7a;
+  position: absolute;
+  top: -20px;
+  left: -20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  z-index: 4;
 `;
 
 export const Title = styled.h3`
@@ -56,7 +55,7 @@ export const Galeria = styled.div`
 export const ContainerImg = styled.div`
   width: 85%;
   height: 720px;
-  background-color: #191c24;
+  background-color: #ffffff;
   /* background-color: #fff; */
   outline: solid 1px #c5c5c561;
   display: flex;
@@ -100,10 +99,10 @@ export const Img = styled.img`
 export const Card = styled.div`
   width: 85%;
   height: 720px;
-  background-color: #191c24;
+  background-color: #fff;
   border-radius: 10px;
   padding: 25px 15px;
-  color: rgb(255, 255, 255);
+  color: #6c7293;
   display: flex;
   flex-direction: column;
   @media (max-width: 700px) {
@@ -127,7 +126,7 @@ export const Input = styled.input`
   width: 780%;
   margin: auto;
   background-color: transparent;
-  color: #fff;
+  color: #6c7293;
   &:hover {
     outline: solid 1px #6c7293;
   }
@@ -155,7 +154,7 @@ export const InputImg = styled.input`
   padding: 5px;
   border-radius: 5px;
   background-color: transparent;
-  color: #fff;
+  color: #6c7293;
   &:hover {
     outline: solid 1px #6c7293;
   }
@@ -175,15 +174,15 @@ export const ButtonEditar = styled.button`
   padding: 10px;
   background-color: transparent;
   border: none;
-  outline: solid 1px green;
-  color: green;
+  outline: solid 1px #6c7293;
+  color: #6c7293;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0.9;
   display: flex;
   &:last-child {
-    color: red;
-    outline: solid 1px red;
+    color: #333;
+    outline: solid 1px #333;
     margin-left:10px ;
   }
   &:hover {
@@ -193,7 +192,7 @@ export const ButtonEditar = styled.button`
 
 export const ContainerCheckbox = styled.div`
   width: 80%;
-  height: 140px;
+  height: 80px;
   overflow-y: scroll;
   margin: auto;
   display: flex;
@@ -203,7 +202,7 @@ export const ContainerCheckbox = styled.div`
     width: 10px;
   }
   &::-webkit-scrollbar-thumb{
-    border: solid 3px #191c24;
+    border: solid 3px #ffffff;
     background-color: #6c7293;
   }
   &::-webkit-scrollbar-thumb{
@@ -241,4 +240,9 @@ export const TituloCheckbox = styled.h3`
   margin-top: 0px;
   margin-bottom: 10px;
   color: #6c7293;
+`;
+
+export const SelectAtribute = styled.select`
+background-color: #fff;
+color: #6c7293;
 `;

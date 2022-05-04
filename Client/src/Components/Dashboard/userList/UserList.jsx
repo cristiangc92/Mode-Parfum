@@ -26,16 +26,16 @@ function UserList() {
         }
     })  
   }
-  // function handlePermissions(id){
-  //   swal("¿Seguro que deseas otorgar permisos de Administrador a este Usuario?", {
-  //     buttons: ["Cancelar", true],
-  //   }).then(respuesta=> { 
-  //       if(respuesta){ 
-  //         toast.success("Le dió permisos de Admin a este usuario!")
-  //        //action hacer admin al usuario
-  //       }
-  //   })
-  // } 
+  function handlePermissions(id){
+    swal("¿Seguro que deseas otorgar permisos de Administrador a este Usuario?", {
+      buttons: ["Cancelar", true],
+    }).then(respuesta=> { 
+        if(respuesta){ 
+          toast.success("Le dió permisos de Admin a este usuario!")
+         //action hacer admin al usuario
+        }
+    })
+  } 
   useEffect(() => {
     dispatch(getUsers())
   }, [dispatch])
@@ -99,12 +99,12 @@ function UserList() {
             <h3>{data.isAdmin ? `Admin` : `Usuario`}</h3>
             <div className={styles.cont_buttons}>
 
-            {/* <div className={`${styles.container_info_button} ${styles.green}`}>
+            <div className={`${styles.container_info_button} ${styles.green}`}>
               <button onClick={()=>handlePermissions(data.id)}>Dar permisos</button>
             </div>
             <div className={styles.container_info_button}>
               <button onClick={()=>handleDelete(data.id)}>Eliminar</button>
-            </div> */}
+            </div>
             </div>
             </div>
           </div>
