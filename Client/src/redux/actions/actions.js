@@ -34,7 +34,7 @@ export function cartDesmount() {
 
 export function userDelete(id) { 
   return async function (dispatch){ 
-    await fetch("http://localhost:3001/deleteUser", {
+    await fetch("https://back-mode-parfum.herokuapp.com/deleteUser", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
