@@ -21,7 +21,7 @@ const deleteProduct = require("./deleteProduct.routes")
 const allUsers = require("./allUsers.routes") 
 const allPayments = require("./allPayments.routes") 
 const addProduct = require("./addProduct.routes");
-const { Users } = require("../db");
+const userExist = require("./userExist.routes");
 
 const router = Router();
 //especificamos que ruta va a acceder la informacion de getProducts
@@ -47,21 +47,7 @@ router.use("/deleteProduct", deleteProduct)
 router.use("/allUsers" , allUsers) 
 router.use("/allPayments" , allPayments) 
 router.use("/addProduct" , addProduct)
-
-router.post("/oneUser" , async(req, res) => {
-    try {
-        const { username } = req.body
-        const user = await Users.findOne({ where: {username}})
-        console.log(user)
-        if(user){ 
-            return res.json({ success: "usuario encontrado"})
-        }else{ 
-            return res.json({ failure: "usuario no encontrado"})
-        }
-    } catch (error) {
-        console.log(error)        
-    }
-})
+router.use("/oneUser" , userExist)
 
 module.exports = router;
 
