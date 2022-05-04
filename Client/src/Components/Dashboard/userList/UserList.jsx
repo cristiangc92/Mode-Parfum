@@ -25,7 +25,7 @@ function UserList() {
         if(respuesta){ 
          //action eliminar usuario
          dispatch(userDelete({id}))
-         setHandleUser(handleUser.push("a"))
+         setHandleUser(handleUser + 1)
         }
     })  
   }
