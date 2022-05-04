@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store/store";
 
 axios.defaults.baseURL = "https://back-mode-parfum.herokuapp.com"
-//https://back-mode-parfum.herokuapp.com
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
