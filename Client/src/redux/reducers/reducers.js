@@ -23,7 +23,9 @@ import {
   GET_CART_DESMOUNT, 
   GET_USERS, 
   GET_PAYMENTS,
-  GET_NOTES
+  GET_NOTES,
+  USER_TO_ADMIN,
+  DELETE_USER
 } from "../actions/actions";
 
 // ubication: {
@@ -396,6 +398,21 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
       };
+    case USER_TO_ADMIN:
+      state.allUsers.forEach((user)=> {
+        if(user.id === action.payload.id){
+          user.isAdmin = action.payload.isAdmin
+        }})
+        console.log(action.payload.id)
+      return { 
+        ...state,
+        allUsers: state.allUsers
+      }
+    case DELETE_USER: 
+      return {
+        ...state,
+        allUsers: state.allUsers.filter(user => user.id !== action.payload.id)
+      }
     default:
       return state;
   }

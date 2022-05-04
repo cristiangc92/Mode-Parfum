@@ -81,7 +81,7 @@ function SignUp() {
         username: respuesta.profileObj.email,
         password: respuesta.profileObj.googleId,
       });
-      window.localStorage.setItem("loggedToken", JSON.stringify(user));
+      window.localStorage.setItem("loggedToken", JSON.stringify(user.data));
       service.setToken(user.data.token);
       if (user.data.token) {
         toast.success(`Bienvenido al Home ${user.data.username}`);

@@ -1,8 +1,8 @@
 import styles from "./userList.module.css";
 import { FaUserCircle, FaUsers } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { getProducts, getUsers } from "../../../redux/actions/actions";
+import { useEffect, useState } from "react";
+import { getProducts, getUsers, userDelete, userToAdmin } from "../../../redux/actions/actions";
 import swal from "sweetalert";
 import toast,{Toaster} from 'react-hot-toast';
 import { Link } from "react-router-dom";
@@ -11,8 +11,10 @@ import { Link } from "react-router-dom";
 function UserList() {
   const products = useSelector((state) => state.products);
   const allUsers = useSelector((state) => state.allUsers);
+  const [handleUser, setHandleUser] = useState(0)
+  const [handleUser2, setHandleUser2] = useState(0)
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(getProducts()); 
   }, []);
@@ -23,6 +25,8 @@ function UserList() {
     }).then(respuesta=> { 
         if(respuesta){ 
          //action eliminar usuario
+         dispatch(userDelete({id}))
+         setHandleUser(handleUser.push("a"))
         }
     })  
   }
@@ -31,14 +35,23 @@ function UserList() {
       buttons: ["Cancelar", true],
     }).then(respuesta=> { 
         if(respuesta){ 
-          toast.success("Le dió permisos de Admin a este usuario!")
-         //action hacer admin al usuario
+          //action hacer admin al usuario 
+          let adminOrUser = allUsers.find(user => user.id === id && user.isAdmin === false)
+          if(adminOrUser){ 
+           toast.success("Le dió permisos de Admin a este usuario!")
+           dispatch(userToAdmin({id , admin: false}))
+           setHandleUser(handleUser + 1)
+         }else{
+          toast.success("Le quitó permisos de Admin a este usuario!")
+           dispatch(userToAdmin({id , admin: true}))
+           setHandleUser2( handleUser2 + 1)
+         }
         }
     })
   } 
   useEffect(() => {
     dispatch(getUsers())
-  }, [dispatch])
+  }, [dispatch , handleUser, handleUser2])
   console.log(allUsers)
 
   return (
@@ -98,13 +111,18 @@ function UserList() {
             <div className={styles.container_admin_buttons}>
             <h3>{data.isAdmin ? `Admin` : `Usuario`}</h3>
             <div className={styles.cont_buttons}>
-
-            <div className={`${styles.container_info_button} ${styles.green}`}>
-              <button onClick={()=>handlePermissions(data.id)}>Dar permisos</button>
-            </div>
-            <div className={styles.container_info_button}>
-              <button onClick={()=>handleDelete(data.id)}>Eliminar</button>
-            </div>
+            { 
+              data.username !== "info.modeparfum@gmail.com" && ( 
+                <> 
+                <div className={`${styles.container_info_button} ${styles.green}`}>
+                  <button onClick={()=>handlePermissions(data.id)}>{data.isAdmin ? "Quitar Permisos": "Dar permisos"}</button>
+                </div>
+                <div className={styles.container_info_button}>
+                  <button onClick={()=>handleDelete(data.id)}>Eliminar</button>
+                </div>
+                </>
+              )
+            }
             </div>
             </div>
           </div>

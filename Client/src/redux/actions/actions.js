@@ -1,6 +1,5 @@
 import axios from "axios";
 import toast from "react-hot-toast";
-// export const USER_UBICATION = "USER_UBICATION";
 export const GET_PRODUCT_ID = "GET_PRODUCT_ID";
 export const GET_ALL_BRAND = "GET_ALL_BRAND";
 export const GET_PRODUCTS = "GET_PRODUCTS";
@@ -13,7 +12,6 @@ export const DELETE_FAV_PRODUCT = "DELETE_FAV_PRODUCT";
 export const SET_CART_PRODUCT = "SET_CART_PRODUCT";
 export const DELETE_CART_PRODUCT = "DELETE_CART_PRODUCT";
 export const GET_PRODUCT_NAME = "GET_PRODUCT_NAME";
-// export const SET_PRODUCT_PRICE = "SET_PRODUCT_PRICE";
 export const REMOVE_PRODUCT_CART = "REMOVE_PRODUCT_CART";
 export const ADD_PRODUCT_AMOUNT = "ADD_PRODUCT_AMOUNT";
 export const REMOVE_PRODUCT_AMOUNT = "REMOVE_PRODUCT_AMOUNT";
@@ -27,9 +25,37 @@ export const GET_PAYMENTS = "GET_PAYMENTS";
 export const GET_CART_DESMOUNT = "GET_CART_DESMOUNT";
 export const GET_NOTES = "GET_NOTES";
 export const POST_PRODUCT = "POST_PRODUCT";
-
+export const USER_TO_ADMIN = "USER_TO_ADMIN";
+export const DELETE_USER = "DELETE_USER";
 export function cartDesmount() {
   return { type: GET_CART_DESMOUNT };
+}
+
+
+export function userDelete(id) { 
+  return async function (dispatch){ 
+    await fetch("http://localhost:3001/deleteUser", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(id) 
+    })
+    dispatch({
+      type: "DELETE_USER",
+      payload: id
+    })
+  }
+}
+
+export function userToAdmin(id) { 
+  return async function (dispatch){ 
+    let json = await axios.post("/userToAdmin" , id)
+    return dispatch({ 
+      type: "USER_TO_ADMIN",
+      payload: json.data
+    })
+  }
 }
 
 export function getNotes() {

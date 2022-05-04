@@ -22,6 +22,8 @@ const allUsers = require("./allUsers.routes")
 const allPayments = require("./allPayments.routes") 
 const addProduct = require("./addProduct.routes");
 const userExist = require("./userExist.routes");
+const userToAdmin = require("./userToAdmin.routes")
+const deleteUser = require("./deleteUser.routes")
 
 const router = Router();
 //especificamos que ruta va a acceder la informacion de getProducts
@@ -48,6 +50,8 @@ router.use("/allUsers" , allUsers)
 router.use("/allPayments" , allPayments) 
 router.use("/addProduct" , addProduct)
 router.use("/oneUser" , userExist)
+router.use("/userToAdmin" , userToAdmin)
+router.use("/deleteUser" , deleteUser)
     
 module.exports = router;
 
