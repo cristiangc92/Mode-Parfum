@@ -211,11 +211,13 @@ export const NavContainer = styled.nav`
   }
   .person_icon_nav-ndeah{
     color: white;
+    cursor: pointer;
     background-color: rgb(136 115 155);
     border-radius: 9999px;
     padding: 5px;
     position: relative;
-    left: -1rem;
+    top: 0.48rem;
+    left: -4.5rem;
     font-size: 1.5rem;
     box-shadow: rgb(0 0 0) 0px 0px 4px;
   }
@@ -242,10 +244,6 @@ export const NavContainer = styled.nav`
     left: -6px;
     letter-spacing: 0cm;
   }
-  @media (min-width: 320px){ 
-    .person_icon_nav-ndeah{ 
-      left: -.8rem;
-    }
   }
 `;
 
@@ -276,32 +274,14 @@ export const DropDown = styled.div`
   flex-direction: column;
   gap: 5px;
   padding: 18px 15px 32px 14px;
-  top: 105px;
+  top: 120px;
+  right: 100px;
   border-radius: 3px;
   animation: forwards animation 300ms;
   @keyframes animation {
     to {
       height: 40px;
     }
-  }
-  @media (min-width: 540px){ 
-    position: relative; 
-    top: 0.5rem;
-    left: 7rem;
-  }
-  @media (min-width: 414px){ 
-    top: 0.8rem;
-    left: 5rem;
-  }
-  @media (min-width: 375px){ 
-    position: relative; 
-    top: 0.5rem;
-    left: 4rem;
-  }
-  @media (min-width: 320px){ 
-    position: relative; 
-    top: 0.5rem;
-    left: 4rem;
   }
 `;
 
