@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const NavContainer = styled.nav`
-  width: calc(100vw - 10px);
+  width: 100%;
   padding: 5px;
   background-color: #fffffff8;
   display: flex;
@@ -180,7 +180,7 @@ export const NavContainer = styled.nav`
 
     .person_icon_nav {
       position: relative;
-      left: 49px; 
+      left: 100px; 
     } 
 
     .bag_nav {
@@ -206,9 +206,19 @@ export const NavContainer = styled.nav`
     font-size: 2rem;
     position: relative;
     top: 0.4rem;
+    left: 1.5rem;
     margin-right: 1.7rem;
   }
-
+  .person_icon_nav-ndeah{
+    color: white;
+    background-color: rgb(136 115 155);
+    border-radius: 9999px;
+    padding: 5px;
+    position: relative;
+    left: -1rem;
+    font-size: 1.5rem;
+    box-shadow: rgb(0 0 0) 0px 0px 4px;
+  }
   .person_icon_nav {
     font-size: 2rem;
     position: relative;
@@ -231,6 +241,11 @@ export const NavContainer = styled.nav`
     top: -15px;
     left: -6px;
     letter-spacing: 0cm;
+  }
+  @media (min-width: 320px){ 
+    .person_icon_nav-ndeah{ 
+      left: -.8rem;
+    }
   }
 `;
 
@@ -268,6 +283,25 @@ export const DropDown = styled.div`
     to {
       height: 40px;
     }
+  }
+  @media (min-width: 540px){ 
+    position: relative; 
+    top: 0.5rem;
+    left: 7rem;
+  }
+  @media (min-width: 414px){ 
+    top: 0.8rem;
+    left: 5rem;
+  }
+  @media (min-width: 375px){ 
+    position: relative; 
+    top: 0.5rem;
+    left: 4rem;
+  }
+  @media (min-width: 320px){ 
+    position: relative; 
+    top: 0.5rem;
+    left: 4rem;
   }
 `;
 

@@ -115,7 +115,7 @@ function SignUp() {
       <SignUpDivContainer>
         <ImgSignUp>
           <Link to="/">
-            <img src={logo} alt="logo" width="450px" />
+            <img className="img-black" src={logo} alt="logo" width="450px" />
           </Link>
         </ImgSignUp>
 
@@ -128,6 +128,7 @@ function SignUp() {
               placeholder="Email"
               type="text"
               name="username"
+              className="input-usuario"
             />
             {errors.username && <p className="error">{errors.username}</p>}
 
@@ -138,6 +139,7 @@ function SignUp() {
               placeholder="Password"
               type="password"
               name="password"
+              className="input-usuario"
             />
             {errors.password && <p className="error">{errors.password}</p>}
             <button>Acceder</button>
@@ -148,14 +150,15 @@ function SignUp() {
               onSuccess={respuestaGoogle}
               onFailure={() => console.log("fail")}
               cookiePolicy={"single_host_origin"}
+              className="Google-button"
               style={{ color: "black important!" }}
             />
-            <div style={{ position: "relative", top: "-1rem" }}>
-              <Link className="link-to-signup" to={"/PasswordReset"}>
+            <div className="OR" style={{ position: "relative", top: "-1rem" }}>
+              <Link className="link-to-signup" id="olv-ct" to={"/PasswordReset"}>
                 ¿Olvidaste tu contraseña?
               </Link>
 
-              <Link className="link-to-signup" to={"/SignUp"}>
+              <Link className="link-to-signup" id="register" to={"/SignUp"}>
                 REGISTRARME
               </Link>
             </div>
@@ -202,13 +205,16 @@ const SignUpDivContainer = styled.div`
     background: #8893b1b5;
     border-radius: 10px;
   }
-  @media (max-width: 455px) {
+  @media (max-width: 540px) {
     height: 125vh;
     width: 125%;
     object-fit: fill;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    .img-black{
+      width: 350px;
+    }
   }
 `;
 
@@ -322,6 +328,53 @@ const SignUpContainer = styled.div`
     }
     input {
       width: 180px;
+    }
+    .OR{ 
+      display: flex; 
+      flex-direction: column;
+      #register{
+        right: 3rem;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .OR{ 
+      display: flex; 
+      flex-direction: column;
+      #register{
+        right: 3rem;
+      }
+    }
+  }
+  @media (max-width: 280px) {
+    form {
+      width: 15rem;
+    }
+    input {
+      width: 130px;
+    }
+    .OR{ 
+      display: flex; 
+      flex-direction: column;
+      #register{
+        right: 2rem;
+      }
+      #olv-ct{ 
+        text-align: center;
+        position: relative;
+        right: -0.4rem;
+      }
+    }
+    .Google-button{
+      width: 8.5rem;
+      height: 4rem;
+      font-size: 10px;
+    }
+    .input-usuario{
+      text-align: center;
+    }
+    .linea{
+      width: 8.3rem;
     }
   }
 `;
