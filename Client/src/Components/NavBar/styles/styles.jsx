@@ -141,6 +141,7 @@ export const NavContainer = styled.nav`
     @media (min-width: 1045px) {
       position: initial;
       margin: 0;
+      margin-right: 2rem;
       a {
         font-size: 1rem;
         display: inline;
@@ -207,7 +208,7 @@ export const NavContainer = styled.nav`
     position: relative;
     top: 0.4rem;
     left: 1.5rem;
-    margin-right: 1.7rem;
+    margin-right: 3.7rem;
   }
   .person_icon_nav-ndeah{
     color: white;
@@ -217,7 +218,7 @@ export const NavContainer = styled.nav`
     padding: 5px;
     position: relative;
     top: 0.48rem;
-    left: -4.5rem;
+    left: -2.5rem;
     font-size: 1.5rem;
     box-shadow: rgb(0 0 0) 0px 0px 4px;
   }
