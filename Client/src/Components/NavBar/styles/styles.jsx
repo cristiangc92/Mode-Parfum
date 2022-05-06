@@ -274,9 +274,9 @@ export const DropDown = styled.div`
   align-items: flex-start;
   flex-direction: column;
   gap: 5px;
-  padding: 18px 15px 32px 14px;
+  padding: 18px 15px 63px 14px;
   top: 120px;
-  right: 100px;
+  right: 85px;
   border-radius: 3px;
   animation: forwards animation 300ms;
   @keyframes animation {

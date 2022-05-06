@@ -70,14 +70,6 @@ function NavBar() {
               <BsPerson
                 onClick={handleDropDown}
                 className="person_icon_nav-ndeah"
-                // style={{
-                //   color: "white",
-                //   backgroundColor: "rgb(136 115 155)",
-                //   borderRadius: "9999px",
-                //   padding: "5px",
-                //   fontSize: "1.5rem",
-                //   boxShadow: "rgb(0 0 0) 0px 0px 4px",
-                // }}
               />
               {dropDown && (
                 <DropDown>
